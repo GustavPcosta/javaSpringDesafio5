@@ -7,15 +7,29 @@ import com.lorem.Travell.model.Destino;
 @Service
 public interface DestinoServiceInterface {
 
-		List<Destino> getAllDestino();
+	List<Destino> getAllDestino();
 
-		Destino getDestinoById(Long id);
+	Destino getUsuarioById(Long id);
 
-		void deleteDestino(Long id);
+	void deleteDestino(Long id);
 
-		Destino saveDestino(Destino destino);
+	Destino saveDestino(Destino destino);
 
-		Destino updateDestino(Destino destino);
+	Destino updateDestino1(Destino destinoAtualizado);
 
-		Destino updateDestino1(Destino destinoAtualizado);
+	Destino updateDestino2(Long id, Destino destinoAtualizado);
+
+		//List<Destino> getAllDestino();
+
+		//Destino getDestinoById(Long id);
+
+		//void deleteDestino(Long id);
+
+		//Destino saveDestino(Destino destino);
+
+		//Destino updateDestino(Destino destino);
+
+		//Destino updateDestino1(Destino destinoAtualizado);
+
+		//Destino updateDestino2(Long id, Destino destinoAtualizado);
 }
