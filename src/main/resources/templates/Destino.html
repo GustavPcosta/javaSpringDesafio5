@@ -1,0 +1,26 @@
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script type="text/javascript">
+    function saveDestino() {
+        var destinoData = {
+            
+        };
+
+        $.ajax({
+            type: 'POST',
+            contentType: 'application/json',
+            url: '/destino/save',
+            data: JSON.stringify(destinoData),
+            success: function (response) {
+                console.log(response);
+                
+            },
+            error: function (error) {
+                console.error(error);
+                
+            }
+        });
+    }
+    <button onclick="saveDestino()">Save Destino</button>
+
+</script>
